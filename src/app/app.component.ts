@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Client';
+  categoryOptions: string[] = [
+    'Steak',
+    'Steak',
+    'Steak'
+  ];
+
 }

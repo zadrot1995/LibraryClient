@@ -1,0 +1,11 @@
+<h3 style="text-align: center"> {{book.name}}</h3>
+<h4>Author: {{book.author}}</h4>
+<h5>To read {{book.name}}
+  <a href="{{book.href}}">click Here</a>.
+</h5>
+
+<pdf-viewer [src]="book.href"
+            [original-size]="false"
+            [show-borders]="true"
+></pdf-viewer>
+

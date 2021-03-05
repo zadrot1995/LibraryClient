@@ -1,0 +1,26 @@
+<div>
+  <div class="Proto"></div>
+</div>
+<div id="loader" class="loader"></div>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>Name</th>
+  </tr>
+  </thead>
+  <tbody >
+  <tr *ngFor="let book of category.books ">
+    <td>{{book.id}}</td>
+    <td>
+      <div>
+        <a class="btn btn-white-view" [routerLink]="['book', book.id]">{{book.name}}</a>
+        <button class="btn btn-white-view" (click)="deleteBook(book.id)" style="border-radius: 100%; background: darkred; margin: 4%">Delete</button>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+
